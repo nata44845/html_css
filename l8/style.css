@@ -1,0 +1,12 @@
+.text-color {
+    color: blueviolet;
+}
+
+.center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+}
+
+.product_box {
+    gap: 32px;
+}

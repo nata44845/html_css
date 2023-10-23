@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #2F2E41;
+    display: flex;
+    gap: 32px;
+}
+
+.header_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.header_link:hover {
+    color: orange;
+}
+
+.header_link:active {
+    color: red;
+}
+
+.header_link:first-child {
+    text-decoration: underline;
+}
+
+.header_link:last-child {
+    border-right: 1px solid orange;
+    padding-right: 32px;
+}
+
+.header_link:nth-child(2n-1) {
+    color: gray;
+}
+
+
+.top {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    display: flex;
+    gap: 22px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 113px;
+    color: #6C63FF;
+    mix-blend-mode: normal;
+    width: 570px;
+}
+
+.button {
+    display:block; 
+    width: 190px;
+    height: 60px;
+    border: 1px solid purple;
+    text-align: center;
+    line-height: 60px;
+    color: purple;
+    font-size: 20px;
+    margin-top: 16px;
+    transition: all 1s;
+
+	animation: heartbeat 3s ease-in-out both;
+}
+
+.button:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+.about {
+    background: rgba(242,242,242,0.34);
+    padding-top: 64px;
+    padding-bottom: 194px;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 80px;
+    color: #6C63FF;
+}
+
+.about_content {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    mix-blend-mode: normal;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.about_text {
+    width: 462px;
+    height: 240px;
+}
+
+.list_item_new::after {
+    content: " new!";
+    color: red;
+}
+
+.list_item:hover::after {
+    content: " <<";
+    color: blue;
+}
+
+.list:hover .list_item_new {
+    background-color: blue;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.item {
+    border:  solid #000;
+    min-height: 200px;
+}
+
+.item1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.item3 {
+    grid-row: 1/3;
+}
+
+.box {
+    padding: 128px auto;
+    position: relative; 
+}
+
+.elem {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+}
+
+.elem1 {
+    background-color: #f00;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.elem2 {
+    background-color: #fa0;
+    top: 75px;
+    left: 75px;
+    z-index: 1;
+}
+
+.elem3 {
+    background-color: #ff0;
+    top: 150px;
+    left: 150px;
+    z-index: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+
+    .about_content {
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}
+
+.icon:hover path {
+	fill: red;
+}
+
+.icon:hover circle {
+	fill: red;
+}
+
+.drive {
+    margin-top: 32px;
+}
+
+.drive:hover .car{
+    margin-left: 1000px;
+}
+
+.car {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    transition: margin-left 3s;
+}
+
+.car-1 {
+    transition-timing-function: ease;
+}
+
+.car-2 {
+    transition-timing-function: ease-in;
+}
+
+.car-3 {
+    transition-timing-function: ease-out;
+}
+
+.car-4 {
+    transition-timing-function: ease-in-out;
+}
+
+.car-5 {
+    transition-timing-function: line;
+}
+
+.bord {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bord_item {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+
+.bord_item-1:hover {
+    transform: translate(200px, -30px) scale(1.5);
+}
+
+.bord_item-2:hover {
+    transform: translate(-30px) scale(1.5);
+}
+
+.bord_item-3:hover {
+    transform: translate(-200px, -30px) scale(1.5);
+}
+
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
+
+

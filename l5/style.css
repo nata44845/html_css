@@ -1,0 +1,70 @@
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    max-width: 1200px;
+    min-height: 100vh;
+    border: 1px solid #000;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 33.3vw;
+    height: 50vh;
+    border: 1px solid #000;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    /* Стили для планшета */
+    h1 {
+        font-size: 24px;
+    }
+
+    .item {
+        background-color: orange;
+        width: 50vw;
+        height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Стили для мобилки */
+    h1 {
+        font-size: 18px;
+    }
+
+    .item {
+        width: 100vw;
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    body {
+        padding: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px ){
+    
+    h1 {
+        text-decoration: underline;
+    }
+}
+
+
