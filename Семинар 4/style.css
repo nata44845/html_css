@@ -1,0 +1,110 @@
+* {
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--020-a-18, #020A18);
+    gap: 20px;
+}
+a {
+    color: var(--ffffff, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.header {
+    display: inline-flex;
+    width: 100%;
+    height: 75px;
+    flex-shrink: 0;
+    gap: 40px;
+    /* border: 1px solid #11F1F1; */
+    justify-content: center;
+    align-items: center;
+}
+.top__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.top__info {
+    /* border: 1px solid #F4C006; */
+    padding: 84px;
+    width: 40%;
+    /* min-height: 540px; */
+}
+.text_h1 {
+    color: var(--ffffff, #FFF);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 71.5px */
+}
+.text_h3 {
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+.text_h5 {
+    color: var(--ffffff, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; 
+}
+button {
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    color: var(--ffffff, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    height: 60px;
+}
+.imaging_play {
+    width: 27px;
+    height: 26px;
+}
+.imaging {
+    max-width: 410px;
+    max-height: 410px;
+}
+.top__buttons {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 20px;
+    /* max-width: 457px; */
+    height: 87px;
+    flex-shrink: 0;
+    /* border: 1px solid #29F13D; */
+    justify-content: flex-start;
+    align-items: center;
+}
+.top__logo {
+    width: 100%;
+    height: 117px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    /* border: 1px solid #DD0BC8; */
+}
+.imaging__foot {
+    height: 59px;
+    flex-shrink: 0;
+}

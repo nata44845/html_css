@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu_item {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu_item:hover {
+    color: crimson;
+}
+
+
+.header {
+    color: #AA2200;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.header2 {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.paragraph {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987
+}
+
+.img_about {
+    border-radius: 10px;
+    width: 300px;
+    transform: scale(1);
+    box-shadow: none;
+    transition: box-shadow 600ms, transform 600ms;
+    
+    }
+    
+.img_about:hover{
+    transform: scale(1.05);
+    box-shadow: 15px 15px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 600ms, transform 600ms;
+    }
+
+.field {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}

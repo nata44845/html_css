@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('./font/Gilroy-Bold.woff2');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('./font/Gilroy-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('./font/Gilroy-Semibold.woff2');
+}
+
+
+.content {
+    /* border: 5px solid black; */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 37px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top_menu {
+    /* border: 5px solid #0150e9; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80px;
+}
+
+.logo_img {
+    margin: 5px 20px;
+}
+
+.right_menu {
+    /* border: 5px solid #20c905; */
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.menu_tab {
+    color: #000;
+    padding: 15px;
+
+    color: #000;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu_first {
+    color: #F25822;
+}
+
+.home {
+    /* border: 5px solid #E99C08; */
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_meta {
+    /* border: 5px solid #bd0efb; */
+    padding: 20px 5px;
+    max-width: 600px;
+}
+
+.title_h1 {
+    margin-bottom: 17px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subtitle {
+    margin-bottom: 37px;
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons {
+    /* border: 5px solid #ff1da4; */
+    padding: 3px 0;
+
+    display: inline-block;
+
+    color: #888;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.button_start {
+    height: 50px;
+    border: none;
+    padding: 15px 35px;
+
+    color: #FFF;
+    border-radius: 50px;
+    background: #F25822;
+    /* box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20); */
+}
+
+.form_text {
+	padding: 15px 35px;
+}
+
+.main_img {
+    width: 50%-20px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.footer {
+    /* border: 5px solid #19fbfb; */
+    height: 145px;
+    margin: 97px auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.brand_img {
+    max-width: 20%;
+}
