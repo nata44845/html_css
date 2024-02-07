@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background: #222;
+}
+
+header {
+    background: #F1E4E6;
+}
+
+main {
+    background: #FFF;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.nav__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__icons {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    margin: 18px 0 19px 231px;
+}
+
+.nav__menu {
+    margin: 26px 240px 20px 0;
+}
+
+.header__group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.header__cell--1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 290px 0 0 63px;
+}
+
+.header__title {
+    color: #222;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.header__text {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*Основные свойства унаследованы от header__text. Или лучше объявлять полностью? */
+.header__text--coral {
+    color: #F16D7F;
+}
+
+.top {
+    /*Так отображение более симметрично, но не соответствует шаблону*/
+    display: flex;
+    justify-content: center;
+    margin: 65px auto 96px auto;
+
+}
+
+
+.top__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+    margin: 0 auto;
+    /*margin-left: 230px;*/
+    /*margin-right: 232px;*/
+}
+
+.top__card {
+    position: relative;
+}
+
+.top__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 22, 22, 0.70);
+}
+
+.top__card--large {
+    grid-row-start: 2;
+    grid-column: span 3;
+    position: relative;
+}
+
+.top__info {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.top__text {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.prod {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px auto 0;
+}
+
+.prod__title {
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.prod__info {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.prod__cards {
+    display: grid;
+    grid-template-rows: repeat(2, 587px);
+    grid-template-columns: repeat(3, 360px);
+    column-gap: 30px;
+    row-gap: 25px;
+    margin: 0 auto;
+    /*margin-left: 230px;*/
+    /*margin-right: 232px;*/
+}
+
+.prod__card {
+    background: #F8F8F8;
+}
+
+.card__info {
+    padding: 24px;
+}
+
+.card__link {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.card__text {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 16px 0;
+}
+
+.card__price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.prod__btn {
+    color: #F26376;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    padding: 15px 39px 16px;
+    margin: 48px auto 60px auto;
+    border: solid 1px #FF6A6A;
+}
