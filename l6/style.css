@@ -17,6 +17,7 @@ summary::-webkit-details-marker {
 
 summary::before {
     content: "\25B6";
+    /* content: "Закрыто"; */
     padding-right: 0.5em;
 }
 

@@ -1,0 +1,35 @@
+@media(min-width: 768px) and (max-width: 1024px) {
+
+
+    .content {
+        max-width: 736px;
+    }
+
+    .header_cell_first img {
+        max-width: 360px;
+    }
+
+    .header_info {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 138px 0 0 39px;
+    }
+
+    .header_title {
+        font-size: 44px;
+    }
+
+    .header_text {
+        font-size: 24px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+
+}

@@ -1,0 +1,519 @@
+@import 'vars'
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Lato', sans-serif
+
+img
+    max-width: 100%
+
+a
+    text-decoration: none
+
+summary
+    display: block
+
+    &::-webkit-details-marker
+        display: none
+
+.center
+    padding-left: calc(50% - #{$widthSite / 2})
+    padding-right: calc(50% - #{$widthSite / 2})
+
+.top
+    position: relative
+    overflow: hidden
+
+.header
+    min-height: 75px
+    background: $colorContent
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    &__left
+        display: flex
+        align-items: center
+        gap: 41px
+
+    &__right
+        display: flex
+        align-items: center
+        gap: 33px
+    &__checkbox
+        position: absolute
+        visibility: hidden
+        left: -9999999px
+    &__checkbox:checked ~ .mobile-menu
+        right: 0
+
+.mobile-menu
+    position: absolute
+    top: 75px
+    right: -$widthMobileMenu
+    z-index: 1
+    transition: right 0.6s
+    width: $widthMobileMenu
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 32px
+    box-sizing: border-box
+    &__link-site
+        align-items: center
+        justify-content: space-around
+        background-color: #e8e8e8
+        padding: 8px
+        border-radius: 10px
+        margin-bottom: 24px
+        display: none
+    &__heading
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__link
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSite
+    &__title
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: $colorSite
+    &__list
+        list-style-type: none
+        padding-left: 21px
+        display: flex
+        flex-direction: column
+        gap: 11px
+        margin-top: 12px
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 20px
+        margin-top: 24px
+.promo
+    display: flex
+    background: #F1E4E6
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+    &__img
+        width: 50%
+
+    &__info
+        border-left: 12px solid $colorSite
+        padding-left: 16px
+        margin-top: 48%
+
+    &__title
+        font-style: normal
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: $colorContent
+
+    &__heading
+        font-style: normal
+        font-weight: 700
+        font-size: 32px
+        line-height: 38px
+        color: $colorContent
+
+    &__content
+        padding-left: 64px
+
+.sale
+    display: grid
+    gap: $gapGrid
+    grid-template-columns: repeat(3, 1fr)
+    padding-top: 64px
+    padding-bottom: 96px
+
+    &__item
+        position: relative
+
+    &__content
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__item_big
+        min-height: 180px
+        grid-column: 1 / -1
+
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &__heading
+        font-style: normal
+        font-weight: 700
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        color: $colorSite
+
+.product-box
+    padding-bottom: 96px
+
+    &__heading
+        font-style: normal
+        font-weight: 400
+        font-size: 30px
+        line-height: 36px
+        text-align: center
+        color: $colorContent
+
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        margin-top: 6px
+        color: #9F9F9F
+
+    &__content
+        margin-top: 48px
+        display: grid
+        grid-template-columns: repeat(auto-fit, $width3)
+        justify-content: center
+        gap: 30px
+
+.product
+    position: relative
+
+    &:hover .product__img
+        filter: brightness(0.5)
+
+    &:hover .product__add
+        display: flex
+
+    &__img
+        width: 100%
+
+    &__add
+        position: absolute
+        top: 188px
+        left: 111px
+        border: 1px solid #fff
+        width: 139px
+        height: 44px
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        display: none
+        align-items: center
+        justify-content: center
+        gap: 11px
+        color: #FFFFFF
+
+        &:hover
+            box-shadow: 0 0 5px #fff
+
+        &:hover svg path
+            fill: $colorSite
+
+    &__content
+        background: #F8F8F8
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        padding: 24px 16px
+        gap: 16px
+
+    &__heading
+        font-style: normal
+        font-weight: 400
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &__text
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+
+    &__price
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: $colorSite
+
+.advantages
+    background-color: $colorContent
+    padding-top: 104px
+    padding-bottom: 104px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    gap: $gapGrid
+    &__item
+        width: $width3
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 24px
+
+    &__heading
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: $colorTextContent
+
+    &__text
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: $colorTextContent
+
+.head
+    min-height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__heading
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 29px
+        color: $colorSite
+
+.breadcrumb
+    display: flex
+    &__box-link:last-child .breadcrumb__link
+        font-weight: 700
+        color: $colorSite
+    &__box-link:not(:last-child)::after
+        content: '/'
+        padding-left: 8px
+        padding-right: 8px
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+    &__link
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $colorSite
+
+.filter
+    width: 100%
+    padding: 13px 16px 16px
+    box-sizing: border-box
+    position: absolute
+    z-index: 1
+    &-box
+        position: relative
+        height: 40px
+        width: $width3
+    &__link
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSite
+    &__box
+        display: flex
+        flex-direction: column
+        padding: 24px 16px
+        gap: 11px
+    &-sort
+        padding-top: 39px
+        display: flex
+        gap: 30px
+    &__summary
+        display: flex
+        gap: 11px
+        align-items: center
+    &[open]
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        & .filter__summary
+            color: $colorSite
+        & .filter__img path
+            fill: $colorSite
+    &__category
+        margin-top: 16px
+        &-summary
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+            padding: 8px 11px 11px
+            border-left: 5px solid $colorSite
+            border-bottom: 1px solid #EBEBEB
+        &[open] .filter__category-summary
+            color: $colorSite
+
+.sort
+    display: flex
+    gap: 28px
+    align-items: center
+    &__details
+        position: relative
+    &__summary
+        display: flex
+        align-items: center
+        gap: 10px
+    &__content
+        position: absolute
+        display: flex
+        flex-direction: column
+        gap: 6px
+        width: 79px
+        padding: 7px 9px 11px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        z-index: 1
+        top: 22px
+        left: -9px
+
+.button
+    width: 212px
+    height: 48px
+    display: flex
+    border: 1px solid $colorSite
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: $colorSite
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: $colorSite
+    justify-content: center
+    align-items: center
+    gap: 22px
+    transition: all 1s
+    &:hover
+        transform: rotate(1720deg)
+        color: #fff
+        background-color: $colorSite
+    &:hover path
+        fill: white
+
+// Страница товара
+
+.slider
+    height: 777px
+    position: relative
+    background: #F7F7F7
+    display: flex
+    justify-content: center
+    align-items: center
+    &__arrow
+        background: rgba(42, 42, 42, 0.15)
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 47px
+        height: 47px
+        position: absolute
+        top: 365px
+        &:hover path
+            fill: $colorSite
+
+        &_left
+            left: 0
+        &_right
+            right: 0
+
+.content
+    background-color: #fff
+    border: 1px solid #EAEAEA
+    padding-top: 64px
+    padding-bottom: 64px
+    max-width: $widthSite
+    margin: -65px auto 0
+    position: relative
+    z-index: 10
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.subscribe
+    min-height: 448px
+    padding-top: 32px
+    padding-bottom: 32px
+    background-image: url(img/subscribe.jpg)
+    background-repeat: no-repeat
+    box-sizing: border-box
+    background-size: cover
+    background-position: center bottom
+
+.footer
+    background-color: $colorContent
+    padding-top: 24px
+    padding-bottom: 24px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: $colorTextContent
+
+.icons
+    display: flex
+    gap: 8px
+    &__link
+        width: 32px
+        height: 32px
+        display: block
+        background-color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        &:hover
+            background-color: $colorSite
+        &:hover path
+            fill: #fff
+
+// Стили для планшета
+
+@import 'tablet'
+@import 'mob'

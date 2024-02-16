@@ -1,0 +1,56 @@
+@media(min-width: 320px) and (max-width: 767px) {
+
+    .content {
+        max-width: calc(100% - 32px);
+    }
+
+    header {
+        height: 362px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile_hide {
+        display: none;
+    }
+
+    .header_info {
+        margin: 0 auto;
+    }
+
+    .header_title {
+        font-size: 38px;
+    }
+
+    .header_text {
+        font-size: 20px;
+    }
+
+    .offers {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 65px auto;
+    }
+
+    .offer_large {
+        position: relative;
+        height: 111px;
+    }
+
+    .items_info {
+        margin-bottom: 0;
+    }
+
+    .products {
+        margin: 64px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .prod_buttons {
+        margin: 40px auto 85px auto;
+    }
+}
