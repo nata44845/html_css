@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+
+    <script src="https://kit.fontawesome.com/bcb7aa9a65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="name" autofocus required placeholder="Имя"><br>
+        <input type="email" name="email" required placeholder="email" pattern=".+@example\.com"><br>
+        <input type="password" name="password" required placeholder="Пароль" minlength="8"><br>
+        <input type="number" min="0" name="age" placeholder="Возраст"><br>
+        <input type="date" name="birth" placeholder="Дата рождения"><br>
+        <input type="text" name="phone" placeholder="Телефон" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"><br>
+        <input type="range" name="range" placeholder="Ранг" min="0" max="10">
+        <label for="range">Range</label><br>
+
+        <label for="check">
+            <input id="check" type="checkbox">
+            <i class="fa fa-fw fa fa-bell"></i>
+            text
+        </label>
+        <br>
+
+        <button type="submit">OK</button>
+    </form>
+
+    <audio src="media/YUrijj_SHatunov_-_Sedaya_noch_50310007.mp3" controls></audio>
+</body>
+
+</html>
