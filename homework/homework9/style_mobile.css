@@ -1,0 +1,123 @@
+@media(min-width: 320px) and (max-width: 767px) {
+
+    .content {
+        max-width: calc(100% - 32px);
+    }
+
+    header {
+        height: 362px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile_hide {
+        display: none;
+    }
+
+    .header_info {
+        margin: 0 auto;
+    }
+
+    .header_title {
+        font-size: 38px;
+    }
+
+    .header_text {
+        font-size: 20px;
+    }
+
+    .offers {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 65px auto;
+    }
+
+    .offer_large {
+        position: relative;
+        height: 111px;
+    }
+
+    .items_info {
+        margin-bottom: 0;
+    }
+
+    .products {
+        margin: 64px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .prod_buttons {
+        margin: 40px auto 85px auto;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        row-gap: 46px;
+        padding: 150px 0 150px;
+    }
+
+    .subscribes {
+        background: url("img/subscribe.png") no-repeat;
+
+    }
+
+    .subscribes_bck {
+        justify-content: center;
+        flex-direction: column;
+        height: 550px;
+    }
+
+    .subscribe_feedback img {
+        width: 91px;
+        height: 91px;
+    }
+
+    .feedback_text {
+        font-size: 18px;
+        height: 73px;
+        margin-top: 29px;
+        margin-bottom: 59px;
+    }
+
+    .subscribe_form {
+        margin-bottom: 40px;
+    }
+
+    .subscribe_header {
+        line-height: 36px;
+    }
+
+    .subscribe_text {
+        font-size: 14px;
+        margin-bottom: 22px;
+        line-height: 18px;
+    }
+
+    .input_mail {
+        width: 195px;
+        line-height: 29px;
+        padding: 7px 20px;
+    }
+
+    .subscribe_btn {
+        line-height: 43px;
+    }
+
+    .socials {
+        padding: 43px 0 9px;
+    }
+
+    .social_info {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+        margin: 0 62px;
+        gap: 40px;
+    }
+
+}
