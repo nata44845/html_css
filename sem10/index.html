@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Меню</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Каталог
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mt-5">
+        <p class="h1">h1. Bootstrap heading</p>
+    </section>
+   
+    <section class="container d-flex">
+
+        <div id="list-example" class="list-group col-md-2">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example col-md-10"
+            tabindex="0">
+            <h4 id="list-item-1">Item 1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil in consectetur eaque, blanditiis repellat
+                soluta, totam, placeat quis non nam ipsum. Deserunt iure quos quidem laudantium. Animi adipisci ipsum
+                libero ipsa hic fugit officia omnis, nihil quia iusto quam consequatur ratione maiores, unde nisi
+                voluptates velit nesciunt ab optio quos autem odio? At harum voluptatum maiores incidunt, quisquam
+                repellat laboriosam inventore neque, ullam nulla provident sunt repudiandae ab exercitationem eveniet
+                magnam minus distinctio natus totam et? Quos, vero? Illum eligendi, fuga perspiciatis eaque sequi magnam
+                vitae consectetur error maxime minima tenetur dicta aperiam, explicabo repellendus omnis quisquam,
+                ratione ea iusto!</p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim repellendus dolores magni obcaecati
+                reiciendis fuga repudiandae quisquam, dolorum voluptate voluptas cupiditate veritatis quaerat provident
+                doloremque accusamus eum odit tempora sed vel quibusdam nemo dolor ipsa aperiam asperiores! Iure
+                laudantium ipsa dolore facilis, deleniti voluptas aliquam in, nemo non consequuntur placeat!
+                Voluptatibus labore ipsum corporis numquam inventore quas aliquid doloribus voluptates voluptate dolores
+                laborum cupiditate, saepe eius quod consectetur mollitia explicabo quos nihil dolore provident. Magni
+                vel, cum tempore provident mollitia rerum dicta assumenda explicabo! Eveniet dicta sapiente tempore
+                totam suscipit voluptates odit, dolorem sit mollitia at. Optio praesentium autem sed.</p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, pariatur quidem repudiandae eligendi ipsum
+                aliquam minus recusandae magnam voluptatem ex omnis fuga cum nesciunt ullam, rem vitae suscipit ad
+                provident libero et dolorum excepturi! Ea quidem repellat voluptatum numquam ex facere laboriosam cumque
+                sunt tenetur? Blanditiis odit dicta vitae optio itaque cumque aliquid maiores incidunt obcaecati nostrum
+                beatae ipsam ullam eos, delectus esse ipsum possimus expedita assumenda modi hic ab? Tenetur dicta nemo
+                ab doloremque, veritatis dolorum assumenda labore natus ad! Cumque magni incidunt pariatur est dolor
+                nisi dolorum, quo esse. Cum asperiores repudiandae iure, reiciendis quasi vel dignissimos consequuntur?
+            </p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates veritatis repellendus rem ex
+                tenetur, neque, nam explicabo modi quia, delectus velit rerum esse excepturi ipsam labore consequatur!
+                Minima doloribus aliquid qui impedit, velit accusantium consequuntur labore dolores quas, id iure
+                sapiente laudantium. Cum, consequuntur quam repellendus ad delectus accusamus sequi aliquid ex
+                consequatur officia ipsam deleniti vero possimus praesentium. Voluptates numquam odit illum quasi sint
+                culpa eveniet reiciendis reprehenderit delectus facilis. Quidem repellendus inventore ab odit, veritatis
+                accusamus temporibus atque cumque nobis esse corporis suscipit laudantium aperiam autem perspiciatis
+                molestiae blanditiis quam? Labore a id omnis quis laudantium nisi itaque!</p>
+        </div>
+    </section>
+
+    <section class="container ">
+        <div id="carouselExampleControls" class="carousel slide width-30" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/welcome-3 1.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/welcome-3 2.svg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/welcome-3 3.svg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+        dataSpyList.forEach(function (dataSpyEl) {
+            bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

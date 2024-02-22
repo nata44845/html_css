@@ -54,11 +54,15 @@
         margin: 40px auto 85px auto;
     }
 
-    .features {
+    /* .features {
         display: flex;
         flex-direction: column;
         row-gap: 46px;
         padding: 150px 0 150px;
+    } */
+
+    .feature {
+        width: 360px;
     }
 
     .subscribes {
